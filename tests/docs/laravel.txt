@@ -1,0 +1,51 @@
+----Empezar a crear el proyecto, en el programa Git:
+composer global require laravel/installer
+laravel new ejemplo
+0
+----Instalando la autentificación
+composer require laravel/breeze --dev
+php artisan breeze:install
+blade
+php artisan breeze:install blade --dark
+----Ahi ya te dará el Login y el register
+Primero crea la BD con el mismo nombre de tu carpeta del Xampp
+Luego en el mismo navegador te dará el RUN
+----Convertir en idioma español
+composer require laravel-lang/common --dev
+php artisan lang:add es
+==>Nos vamos a config, y cambiamos a "es"
+----Si quieres el idioma ingles, es este comando
+php artisan lang:publish
+----Para ver la lista de rutas
+php artisan route:list --except-vendor
+----Para guardar los cambios
+npm run dev
+----Para crear una migración
+php artisan make:model Prueba(ojo que es el nombre de lo que creaste) -mrc
+----Para integrarlo la tabla en la base de datos
+php artisan migrate
+----Para eliminar la tabla en la base de datos, ojo que va de forma ascendente
+php artisan migrate:rollback
+/*Eliminas la ultima columna*/
+php artisan migrate:rollback --step=1
+/*Eliminas la ultima y penultima columna*/
+php artisan migrate:rollback --step=2
+----Para colocar el css y el JS
+npm run build
+----Para la libreria tableur
+comporser require takielias/tablar
+php artisan tablar:install
+----Para la bsae de datos
+php artisan migrate
+php artisan serve
+npm run dev
+-----Link del tablar: https://tablar.ebuz.xyz/docs/4.0/export
+php artisan tablar:export-all
+-----Generador de CRUD
+composer require takielias/tablar-crud-generator --dev
+php artisan vendor:publish --tag=crud
+-----php artisan make:migration create_products_table
+----Para integrarlo la tabla en la base de datos
+php artisan migrate
+----Generar el CRUD rápido, en el caso de productos
+php artisan make:crud products
