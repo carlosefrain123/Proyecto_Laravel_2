@@ -18,7 +18,7 @@ class RouteServiceProvider extends ServiceProvider
      * @var string
      */
     //TODO: Era esta pinche ruta XD, igual mano. Trata de seguir estudiando rutas
-    public const HOME = '/';
+    public const HOME = '/home';
 
     /**
      * Define your route model bindings, pattern filters, and other route configuration.
